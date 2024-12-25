@@ -1,0 +1,113 @@
+Test environment : 
+    OS : Ubuntu 20.04
+    Python : 3.8.10
+---------------------------------------
+I: distribute.py : allocate images/labels file to YOLO format with 0.8/0.1/0.1
+  
+  1.create two folder with following structure
+    ./img_save
+    ./data--
+        |--train
+           |--images
+           |--labels
+        |--test
+           |--images
+           |--labels
+        |--val
+           |--images
+           |--labels
+
+  2.put images and labels into img_save
+
+  3.execute python3 distribute.py
+
+----------------------------------------------
+II: img_enhance.py : images enhance with Brightness/Constrast/Color/Sharpness
+  
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_enhance.py
+
+  4.execute python3 distribute.py
+
+----------------------------------------------
+III: img_filp.py : filp images/labels in horizon/vertical/both direction
+                   it only works in YOLO xywh format
+  
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_filp.py(type variable)
+
+  4.execute python3 img_filp.py
+
+------------------------------------------
+IV: img_filp_obb.py : filp images/labels in horizon/vertical/both direction
+                      it only works on YOLO OBB x1y1x2y2x3y3x4y4 format
+
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_filp_obb.py(type variable)
+
+  4.execute python3 img_filp_obb.py
+
+-----------------------------------------
+V: img_inverse.py : inverse the grayscale images
+  
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.execute python3 img_inverse.py
+
+----------------------------------------
+VI: img_noise.py : add guass/saltpepper noise into images
+
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_noise.py
+
+  4.execute python3 img_noise.py
+
+------------------------------------------
+VII: img_rotate.py : rotate the images/labels
+                     it only works in YOLO xywh format
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_rotate.py(angle variable)
+
+  4.execute python3 img_rotate.py
+
+------------------------------------------
+VIII: img_rotate_obb.py : rotate the images/labels
+                          it only works in YOLO OBB x1y1x2y2x3y3x4y4 format
+  1.create two folder with following structure
+    ./img_save
+    ./new_pic
+
+  2.put images and labels into img_save
+
+  3.adjust the paramter in img_rotate_obb.py(angle variable)
+
+  4.execute python3 img_rotate_obb.py
